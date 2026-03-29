@@ -146,7 +146,7 @@ class ScreenshotCommand(PebbleCommand):
     @classmethod
     def _resolve_gif_start_dt(cls, args):
         now = datetime.datetime.now()
-        raw = getattr(args, "gif_start_time", None) or "10:09:58"
+        raw = getattr(args, "gif_start_time", None) or "21:59:58"
         try:
             hh, mm, ss = [int(part) for part in str(raw).split(":")]
             return now.replace(hour=hh, minute=mm, second=ss, microsecond=0)
